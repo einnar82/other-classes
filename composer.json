@@ -1,0 +1,39 @@
+{
+    "name": "einnar82/other-classes",
+    "description": "Create your contracts, services and repositories via artisan console.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rannie Ollit",
+            "email": "einnar82@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/einnar82/other-classes",
+    "keywords": ["Laravel", "contracts", "services", "repositories"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RannieOllit\\OtherClasses\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RannieOllit\\OtherClasses\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RannieOllit\\OtherClasses\\OtherClassesServiceProvider"
+            ]
+        }
+    }
+}
