@@ -57,5 +57,8 @@ class OtherClassesServiceProvider extends ServiceProvider
             MakeRepositoryCommand::class,
             MakeServicesCommand::class
         ]);
+        $this->publishes([
+            __DIR__.'\other-classes.php' => config_path('other-classes.php'),
+        ], 'config');
     }
 }

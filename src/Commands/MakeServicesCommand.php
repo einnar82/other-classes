@@ -45,6 +45,6 @@ class MakeServicesCommand extends GeneratorCommand
        */
       protected function getDefaultNamespace($rootNamespace)
       {
-          return $rootNamespace.'\Services';
+        return $rootNamespace.'\\'.config('other-classes.services', 'Services');
       }
 }

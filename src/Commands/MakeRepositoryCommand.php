@@ -45,6 +45,6 @@ class MakeRepositoryCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace.'\Repositories';
+        return $rootNamespace.'\\'.config('other-classes.repositories', 'Repositories');
     }
 }

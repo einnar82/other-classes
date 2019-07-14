@@ -28,13 +28,13 @@ class MakeTraitCommand extends GeneratorCommand
     protected $type = 'Trait';
 
     /**
-      * Get the stub file for the generator.
-      *
-      * @return string
-      */
+     * Get the stub file for the generator.
+     *
+     * @return string
+     */
     protected function getStub()
     {
-        return __DIR__.'/stubs/trait.stub';
+        return __DIR__ . '/stubs/trait.stub';
     }
 
     /**
@@ -45,6 +45,6 @@ class MakeTraitCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace.'\Traits';
+        return $rootNamespace.'\\'.config('other-classes.traits', 'Concerns');
     }
 }
