@@ -11,7 +11,7 @@
     "homepage": "https://github.com/einnar82/other-classes",
     "keywords": ["Laravel", "contracts", "services", "repositories"],
     "require": {
-        "illuminate/support": "~5"
+       "illuminate/support": "^5.0|^6.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~7.0",
